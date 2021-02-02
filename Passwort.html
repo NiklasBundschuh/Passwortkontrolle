@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passwortvalidierung</title>
+    <link rel="stylesheet" href="Passwort.css">
+</head>
+
+<body>
+    <form>
+        <div class="container">
+            <label for="psw"><b>Passwort</b></label>
+            <input type="text" placeholder="Passwort eingeben" name="psw" id="passwordInput" required
+                onkeyup="onPasswordChanged()"> <!-- onkeyup will be activated when the user presses a key.
+                onPasswordChanged is a funktion that I write in the Javascript file.  -->
+            <p id="msg"></p>
+            <button type="submit" id="passwordButton" disabled="true" onclick="onButtonClick()">Passwort speichern</button>
+        </div>
+    </form>
+
+    <script src="Passwort.js"></script>
+</body>
+
+</html>
